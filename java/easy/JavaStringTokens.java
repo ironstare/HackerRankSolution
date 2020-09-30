@@ -2,6 +2,11 @@ import java.util.Scanner;
 
 /**
  * JavaStringTokens
+ * https://www.hackerrank.com/challenges/java-string-tokens/problem
+ * 
+ * This code is based upon user pmtatar https://www.hackerrank.com/pmtatar
+ * 
+ * 
  */
 public class JavaStringTokens {
 
@@ -9,11 +14,15 @@ public class JavaStringTokens {
         Scanner scan = new Scanner(System.in);
         scan.useDelimiter("\\Z");
         String inputString = scan.nextLine().trim();
-        
-        String[] wordInInputs = inputString.split("[!,?._'@\\s]+");
-        System.out.println(wordInInputs.length);
-        for(String word : wordInInputs){
-            System.out.println(word);
+
+        if (inputString.length() > 0) {
+            String[] wordsInInput = inputString.split("[!,?._'@\\s]+");
+            System.out.println(wordsInInput.length);
+            for (String word : wordsInInput) {
+                System.out.println(word);
+            }
+        } else {
+            System.out.println(0);
         }
 
         scan.close();

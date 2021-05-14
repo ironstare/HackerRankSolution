@@ -10,6 +10,7 @@ import java.util.regex.PatternSyntaxException;
  * Pattern.compile returns pattern but 
  * if regex is not valid it throws PatternSyntacException
  * catch exception to print you message
+ * add one line to check git setup
  * 
  * https://docs.oracle.com/javase/6/docs/api/java/util/regex/Pattern.html#compile%28java.lang.String%29
  * 
